@@ -46,7 +46,7 @@ export default function Home() {
               <a
                 href="https://nextjs.org/docs/api-reference/create-next-app"
                 target="_blank"
-                className="text-indigo-300"
+                className="text-indigo-300" rel="noreferrer"
               >
                 create-next-app
               </a>
