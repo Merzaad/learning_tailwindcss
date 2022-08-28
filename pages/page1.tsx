@@ -3,7 +3,6 @@ type propsType = {
   data: string;
 };
 const Page1: NextPage<propsType> = ({ data }) => {
-  const test = "";
   return (
     <div className="flex flex-col gap-4 justify-center items-center h-screen bg-gradient-to-b from-sky-900 to-stone-900">
       <div
@@ -21,6 +20,8 @@ const Page1: NextPage<propsType> = ({ data }) => {
           <div className="w-1/2 h-full m-auto rounded-md  bg-teal-500/50" />
         </div>
       </div>
+      <div className="box-border h-8 px-16 w-1/4 bg-teal-700/60"  />
+      <div className="box-content h-8 px-16 w-1/4 bg-cyan-500/30 border border-sky-500/50 rounded-sm"  />
     </div>
   );
 };
