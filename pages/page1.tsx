@@ -4,7 +4,7 @@ type propsType = {
 };
 const Page1: NextPage<propsType> = ({ data }) => {
   return (
-    <div className="flex flex-col gap-4 justify-center items-center h-screen bg-gradient-to-b from-sky-900 to-stone-900">
+    <div className="flex flex-col gap-4 justify-center h-screen items-center bg-gradient-to-b from-sky-900 to-stone-900">
       <div
         className="flex justify-center items-center w-24 h-8
                    bg-cyan-700/50 hover:scale-110 duration-200 rounded-lg cursor-pointer
@@ -20,8 +20,13 @@ const Page1: NextPage<propsType> = ({ data }) => {
           <div className="w-1/2 h-full m-auto rounded-md  bg-teal-500/50" />
         </div>
       </div>
-      <div className="box-border h-8 px-16 w-1/4 bg-teal-700/60"  />
-      <div className="box-content h-8 px-16 w-1/4 bg-cyan-500/30 border border-sky-500/50 rounded-sm"  />
+      <div className="box-border h-8 px-16 w-1/4 bg-teal-700/60" />
+      <div className="box-content h-8 px-16 w-1/4 bg-cyan-500/30 border border-sky-500/50 rounded-sm" />
+      <div className="flex gap-2 items-baseline justify-center w-32 border h-16 border-sky-100/20 rounded-sm">
+        {[...Array(3)].map((x, i) => (
+          <div key={i} className={`flex items-center text-teal-400 justify-center w-8 h-${(i+1)}/4  bg-teal-500/70`}>line</div>
+        ))}
+      </div>
     </div>
   );
 };
