@@ -24,8 +24,22 @@ const Page1: NextPage<propsType> = ({ data }) => {
       <div className="box-content h-8 px-16 w-1/4 bg-cyan-500/30 border border-sky-500/50 rounded-sm" />
       <div className="flex gap-2 items-baseline justify-center w-32 border h-16 border-sky-100/20 rounded-sm">
         {[...Array(3)].map((x, i) => (
-          <div key={i} className={`flex items-center text-teal-400 justify-center w-8 h-${(i+1)}/4  bg-teal-500/70`}>line</div>
+          <div
+            key={i}
+            className={`flex items-center text-teal-400 justify-center w-8 h-${
+              i + 1
+            }/4  bg-teal-500/70`}
+          >
+            line
+          </div>
         ))}
+      </div>
+      <div className="w-11/12 md:w-1/2 font-sans text-sm  text-teal-100 font-semibold tracking-widest leading-loose">
+        By default, Tailwind provides three font family utilities: a cross-browser sans-serif stack,
+        a cross-browser serif stack, and a cross-browser monospaced stack. Tailwind lets you
+        conditionally apply utility classes in different states using variant modifiers. You can
+        also use variant modifiers to target media queries like responsive breakpoints, dark mode,
+        prefers-reduced-motion, and more.
       </div>
     </div>
   );
