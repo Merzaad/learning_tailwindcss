@@ -1,3 +1,6 @@
+import { useState } from 'react'
+import Button from './components/Button'
+
 function App() {
   return (
     <div className='grid grid-cols-1 gap-5 p-2 md:grid-cols-4'>
@@ -6,8 +9,9 @@ function App() {
           main
         </div>
       </header>
-      <main className='flex h-40 items-center justify-center rounded-lg border border-indigo-900 md:col-span-3'>
-        main
+      <main className='flex gap-4 h-40 items-center justify-center rounded-lg border border-indigo-900 md:col-span-3'>
+        <Button />
+        <Button />
       </main>
       <aside className='flex h-40 items-center justify-center rounded-lg border border-yellow-500 md:col-span-1'>
         aside
